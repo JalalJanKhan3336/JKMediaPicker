@@ -1,0 +1,2 @@
+include ':app', ':jkmediapicker'
+rootProject.name='JKMediaPickerDemo'

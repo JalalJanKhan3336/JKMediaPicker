@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">JKMediaPickerDemo</string>
+    <string name="cap_img_path">Captured Image Path</string>
+    <string name="br_img_path">Browsed Image Path</string>
+    <string name="br_aud_path">Browsed Audio Path</string>
+    <string name="br_doc_path">Browsed Document Path</string>
+    <string name="br_vid_path">Browsed Video Path</string>
+    <string name="cap_vid_path">Captured Video Path</string>
+    <string name="open_dialog">Open Dialog</string>
+</resources>

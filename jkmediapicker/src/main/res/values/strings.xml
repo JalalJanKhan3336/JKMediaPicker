@@ -1,0 +1,10 @@
+<resources>
+    <string name="lib_name">jkmediapicker</string>
+    <string name="cap_img">Capture Image</string>
+    <string name="br_img">Browse Image</string>
+    <string name="br_vid">Browse Video</string>
+    <string name="cap_vid">Capture Video</string>
+    <string name="br_file">Browse File</string>
+    <string name="br_aud">Browse Audio</string>
+
+</resources>
