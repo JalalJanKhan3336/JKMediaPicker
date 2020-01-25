@@ -11,6 +11,9 @@ import com.pakistan.jkmediapicker.callback.JKMediaPickerDialogOptionCallback;
 import com.pakistan.jkmediapicker.dialog.JKMediaPickerOptionDialog;
 import com.pakistan.jkmediapicker.callback.JKMediaResultCallback;
 
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
+
 public class JKMediaPickerActivity extends AppCompatActivity
         implements JKMediaPickerDialogOptionCallback {
 
@@ -89,12 +92,24 @@ public class JKMediaPickerActivity extends AppCompatActivity
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if(resultCode == RESULT_OK && data != null)
-            mJKMediaResultCallback.onMediaIntentResult(requestCode, data);
-        else
-            mJKMediaResultCallback.onMediaIntentResult(requestCode, null);
+        AtomicBoolean flag = new AtomicBoolean(false);
 
-        finish();
+        if(resultCode == RESULT_OK && data != null) {
+            flag.set(true);
+        }
+        else {
+            flag.set(false);
+        }
+
+        if(flag.get()) {
+            mJKMediaResultCallback.onMediaIntentResult(requestCode, data);
+            finish();
+        }
+        else {
+            mJKMediaResultCallback.onMediaIntentResult(requestCode, null);
+            finish();
+        }
+        
     }
 
 }

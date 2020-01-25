@@ -2,10 +2,11 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
     tools:context=".dialog.JKMediaPickerOptionDialog">
 
     <LinearLayout
@@ -13,9 +14,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_horizontal"
-        android:padding="10dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginTop="16dp">
+        android:padding="10dp">
 
         <FrameLayout
             android:id="@+id/bro_video_fl"
@@ -24,8 +23,8 @@
 
             <ImageView
                 android:id="@+id/video_by_gallery_iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_video_gallery"
                 android:layout_gravity="center"/>
@@ -35,6 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/br_vid"
+                android:textSize="12sp"
                 android:layout_gravity="bottom"/>
 
         </FrameLayout>
@@ -47,8 +47,8 @@
 
             <ImageView
                 android:id="@+id/file_by_gallery_iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_attachment"
                 android:layout_gravity="center"/>
@@ -58,6 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/br_file"
+                android:textSize="12sp"
                 android:layout_gravity="bottom"/>
 
         </FrameLayout>
@@ -70,8 +71,8 @@
 
             <ImageView
                 android:id="@+id/bro_audio_iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_mic"
                 android:layout_gravity="center"/>
@@ -81,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/br_aud"
+                android:textSize="12sp"
                 android:layout_gravity="bottom"/>
 
         </FrameLayout>
@@ -91,6 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="10dp"
         android:gravity="center_horizontal">
 
         <FrameLayout
@@ -100,8 +103,8 @@
 
             <ImageView
                 android:id="@+id/image_by_camera_iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_camera"
                 android:layout_gravity="center"/>
@@ -111,6 +114,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cap_img"
+                android:textSize="12sp"
                 android:layout_gravity="bottom"/>
 
         </FrameLayout>
@@ -123,8 +127,8 @@
 
             <ImageView
                 android:id="@+id/image_by_gallery_iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_gallery"
                 android:layout_gravity="center"/>
@@ -134,6 +138,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/br_img"
+                android:textSize="12sp"
                 android:layout_gravity="bottom"/>
 
         </FrameLayout>
@@ -146,8 +151,8 @@
 
             <ImageView
                 android:id="@+id/video_by_camera_iv"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
                 android:layout_marginBottom="16dp"
                 android:src="@drawable/ic_video_camera"
                 android:layout_gravity="center"/>
@@ -157,6 +162,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/cap_vid"
+                android:textSize="12sp"
                 android:layout_gravity="bottom"/>
 
         </FrameLayout>
